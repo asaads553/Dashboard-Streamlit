@@ -109,7 +109,7 @@ def load_simulation_data():
 def load_real_csv_data(): 
     """Charge le fichier CSV des fontaines à eau (avec correction du chemin Windows)."""
     # VEUILLEZ VÉRIFIER QUE CE CHEMIN EST CORRECT SUR VOTRE MACHINE
-    file_path = r"C:\Users\rayan.rami\Desktop\data viz web\fontaines-a-eau-dans-le-reseau-ratp.csv" 
+    file_path = "fontaines-a-eau-dans-le-reseau-ratp.csv" 
     
     try:
         df = pd.read_csv(file_path, sep=';') 
@@ -396,4 +396,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
